@@ -42,12 +42,13 @@
     background:black  
     }
     strong{
-    font-weight: 600;
-    color: #e71717 !important;
+    font-weight: bold; 
     }
     #bg-fish { 
     background-size: cover ; 
     height: 96vh; 
+    display: flex;
+    justify-content: center;
    
     }   #bg-fish {
     
@@ -102,9 +103,7 @@
     position: absolute;
     width: 100%; 
     }
-    .navbar-nav strong {
-    color: #dc3545;
-    }
+  
     .navbar-brand{
     font-size: 11px; 
     }
@@ -160,8 +159,8 @@
       #bg-fish {
       background: url(dist/images/mob-bg.png) no-repeat  ; 
       background-size: cover !important; 
-    padding: 40px 0 0;
-    height: 96vh;
+      padding: 40px 0 0;
+      height: 96vh;
 
 
     }
@@ -236,7 +235,7 @@
     display: inherit;
     }
     .collapse.navbar-collapse {
-    position: absolute;
+    position: fixed;
     background: #303030;
     width: 80%;
     height: 100%;
@@ -287,9 +286,9 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-transpart" aria-label="First navbar example">
       <div class="container-fluid orders">
-        <a class="navbar-brand d-flex align-items-center" style="
-        font-weight: bold;
-    " href="#"> VA.   </a>
+        <a class="navbar-brand d-flex align-items-center" href="#"><strong style="
+          font-weight: bold;
+      " > VA.</strong> Profissional Web Designer   </a>
         <button class="navbar-toggler border-0 p-0" onclick="Menu()" id="btn-menu" mtype="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <img src="dist/images/menu.png"  width="20" alt="">
         </button>
@@ -299,6 +298,9 @@
               <a class="nav-link " href="#portfolio">  Portfólio </a>
             </li>
              
+            <li class="nav-item">
+              <a class="nav-link"  href="#about">Sobre</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link"  href="#about">Sobre</a>
             </li>
