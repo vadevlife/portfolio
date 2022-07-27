@@ -143,9 +143,10 @@
     transform: translate3d(0px, -7px, 0px);
     }
     .swiper-slide{ 
-    padding: 10px;
+    padding:  0px;
     cursor: pointer;
-    }
+      max-height: 99vh;
+  }
     .ls{
     letter-spacing: -2px;
     }
@@ -205,16 +206,21 @@
 
     }
     @media(min-width:768px){
+
       section {
     min-height: 65vh;
-    padding: 70px;
+    max-height: 100vh;
+    padding: 0px;
 }
-      #bg-fish {
-    background: url(dist/images/background.png) no-repeat;
- 
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    #bg-fish {
+      background: url(dist/images/background.png) no-repeat; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     .navbar {
     position: absolute;
@@ -331,12 +337,12 @@
           </ul>
         </div>
         <div class="d-none d-md-flex align-items-center"> 
-          <button  class="btn border-1 btn-lg rounded-pill  " style="
+          <a href="https://wa.me/11983572332" class="btn border-1 rounded-pill  " style="
           border: 2px solid white;
           width: 140px;
       " type="button">
-            What me
-          </button>
+            What me <i class="fa-brands fa-whatsapp"></i>
+        </a>
           <a target="_blank" href="https://github.com/vadevlife"> 
           <i class="fa-brands fa-github fs-6 text-white  p-3 d-none d-lg-block"></i>
         </a>
@@ -357,12 +363,8 @@
       </div>
       </div>
     </header>
-    <main style="
-    background: #2a11bf;
-    ">
-      <div class="container mt-md-5 pt-3 pb-2 d-block d-md-none   " style="z-index: 999;
-      position: relative;
-      background: #2a11bf;"> 
+    <main style="background:#2a11bf;">
+      <div class="container mt-md-5 pt-3 pb-2 d-block d-md-none   " style="z-index: 999;position: relative;background: #2a11bf;"> 
           <div class="row p-3 p-md-5 mb-4">
             <div class="col-md-2 text-white pt-3   d-none d-md-block">
               <h6 class="text-muted text-center">  </h6>
@@ -412,16 +414,29 @@
           </div>
       </div>
 
-      <div class="highlights  pt-md-3" style="background: #2A11BF;">
-        <div class="container  ">
-          <div class="row justify-content-between">
+      <div class="highlights pt-md-3" style="background: #2A11BF;">
+       
+        <div class="container-fluid mb-4 ">
+          <div class="row">
+            <div class="col-md-6 col-lg-12 mt-2 p-5 text-center">
+              <h1 class="display-2 mb-sm-1" style="
+              font-weight: 900;
+              color: white;
+              text-align:center;
+              ">Solutions.</h1>
+              <p class="p-0 m-0"> Trabalhos que tive o prazer de criar, desenvolver e aprender com as praticas.  </p>
+               
+              
+            </div>
+
+          </div>
+          <div class="row justify-content-between p-md-3">
             <div class="col-md-3 d-none d-md-block">
               <div class="card bg-transparent p-3 border-0">
                 <div class="card-body text-white">
                   <i class="far fa-edit fs-6"></i>
-                  <h6>UI Designer</h6>
-                  <p>Design em conjunto com a regra de
-                    negócio, entenda seu usuário. 
+                  <h6>Design Gráfico</h6>
+                  <p>Criamos materiais para social media e impressão digital.
                   </p>
                    
                 </div>
@@ -433,9 +448,8 @@
               <div class="card bg-transparent p-3 border-0  pb-2">
                 <div class="card-body text-white">
                   <i class="fas fa-mobile-alt fs-6"></i>
-                  <h6>Desenvolvedor Front-End</h6>
-                  <p  >Aplicações Fluidas e de Auto Desempenho, otimizam o envolvimento
-                    e aumenta a conversão. 
+                  <h6>Desenvolvimento de Sites</h6>
+                  <p  >Desenvolvemos seu site ou app, e podemos criar novos recurso para sua loja, site ou app.. 
                   </p>
                   <a href="" class="d-flex justify-content-end text-danger"><i class="fas fa-long-arrow-alt-right fs-6"></i> </a>
                 </div>
@@ -445,7 +459,7 @@
               <div class="card bg-transparent p-3 border-0 pb-2"  >
                 <div class="card-body text-white">
                   <i class="fas fa-cart-arrow-down fs-6"></i>
-                  <h6>integração de E-commerce</h6>
+                  <h6>E-commerce integrações </h6>
                   <p  >Soluções para e-commerce, recursos
                     desenvolvidos para seu negócio. 
                   </p> 
@@ -458,9 +472,8 @@
               <div class="card bg-transparent p-3 border-0 pb-2"  >
                 <div class="card-body text-white">
                   <i class="fas fa-cart-arrow-down fs-6"></i>
-                  <h6>integração de E-commerce</h6>
-                  <p>Soluções para e-commerce, recursos
-                    desenvolvidos para seu negócio. 
+                  <h6>Design de interface</h6>
+                  <p>Soluções de Design UI para interfaces de E-commerces, web sites ou apps.
                   </p> 
                   <a href="" class="d-flex justify-content-end text-danger"><i class="fas fa-long-arrow-alt-right fs-6"></i> </a>
 
@@ -469,15 +482,17 @@
             </div>
           </div>
         </div>
+
+        
     </div>
 
   
     <section class="portfolio">
 
       <div id="portfolio" >
-        <div class="container">
+        <div class="container-fluid">
           <div class="row p-3 p-md-0 p-5">
-            <div class="col-md-5 col-lg-4 ">
+            <div class="col-md-6 col-lg-4 mt-5 p-5">
               <h1 class="display-2 mb-sm-5" style="
               font-weight: 900;
               color: white;
@@ -485,14 +500,32 @@
               <p> Trabalhos que tive o prazer de criar, desenvolver e aprender com as praticas.  </p>
               <p>  Meu momento é de desenvolver soluções simples e de maneira autonoma, para ajudar trabalhadores informais. </p>  
               <p> Tenho me dedicado a programação, mas  o design ainda é uma das minhas paixões.</p>  
-             <button  class="btn border-1 btn-lg rounded-pill  " style="  border: 2px solid white;    width: 140px;   margin: 15px auto;" type="button">
+              
+             <a href="https://wa.me/11983572332" class="btn border-1 rounded-pill mt-4 " style="
+             border: 2px solid white;
+             width: 140px;
+         " type="button" target="_blank">
                What me
-             </button>
-
+           </a>
             </div>
-            <div class="col-md-6  ">
 
+            <div class="col-md-6  col-lg-7 offset-lg-1 p-0">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"> 
+                    <img src="dist/images/logo-marca.png" alt=""> 
+                  </div>
+                  <div class="swiper-slide"> 
+                    <img src="dist/images/mobile.png" alt=""> 
+                  </div>
+              
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+              </div>
             </div>
+
           </div> 
         </div>
       </div>
@@ -500,10 +533,10 @@
     </section>
 
     <section  class="Sobre"style="background: #2a11bf;">
-      <div id="" >
-        <div class="container">
+      <div id="about" >
+        <div class="container-fluid">
           <div class="row p-3 p-md-0 p-5">
-            <div class="col-md-4  ">
+            <div class="col-md-4 mt-5 p-5">
               <h1 class="display-2 mb-sm-5" style="font-weight: 900;color: white;"> About.</h1>
                <p class=" d-none d-lg-block"> 
                 Crio interfaces e UI’s focadas na experiência do usuário e integrações de recursos de usabilidade de lojas para comércio eletrônico.
@@ -516,7 +549,7 @@
                 Curriculum Download 
              </button>
             </div>
-            <div class="col-md-6 offset-1 mt-5 "> 
+            <div class="col-md-6 offset-1 mt-5 p-5"> 
           
               <div class="row">
                 <div class="col-md-6 text-white  "> 
@@ -595,10 +628,10 @@
       breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 15
       },700: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 15  
       },
        
