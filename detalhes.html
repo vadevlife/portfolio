@@ -507,7 +507,20 @@
             </div>
 
             <div class="col-md-6  col-lg-7 offset-lg-1 p-0">
-              <div id="slide"></div> 
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"> 
+                    <img src="dist/images/logo-marca.png" alt=""> 
+                  </div>
+                  <div class="swiper-slide"> 
+                    <img src="dist/images/mobile.png" alt=""> 
+                  </div>
+              
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+              </div>
             </div>
 
           </div> 
@@ -515,40 +528,6 @@
       </div>
 
     </section>
-
-
-
-
-    <script>
-      initSlide=()=>{
-        let containerSlide=document.getElementById("slide")
-
-        containerSlide==true ? 
-        
-        innerHTML=`
-              <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"> 
-                <img src="dist/images/logo-marca.png" alt=""> 
-                </div>
-                <div class="swiper-slide"> 
-                <img src="dist/images/mobile.png" alt=""> 
-                </div>
-
-                </div>
-                <div class="swiper-pagination"></div>
-                <!-- <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div> -->
-              </div>
-        `
-        :
-        
-        console.log('err')
-
-          
-
-      }
-    </script>  
 
     <section  class="Sobre"style="background: #2a11bf;">
       <div id="about" >
