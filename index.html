@@ -36,6 +36,10 @@
     .highlights h6{
       padding: 10px 0 0;
     }
+
+    img{
+      max-width: 100%;
+    }
     
     .portfolio{
       background-color: #DE1745;
@@ -57,9 +61,7 @@
     body{
     background:black  
     }
-    strong{
-    font-weight: bold; 
-    }
+    
     #bg-fish { 
     background-size: cover ; 
     height: 96vh; 
@@ -205,6 +207,9 @@
     }
 
     }
+    .img-style{
+      width: 220px; position: relative;  bottom: 45px; transform: rotate(-4deg);  
+      }
     @media(min-width:768px){
 
       section {
@@ -249,9 +254,11 @@
     }
     @media(min-width:1024px){
       .display-1 {
-        font-size: 6.7rem !important;    line-height: 1.0  !important;font-weight: 900;
+        font-size: 6.7rem !important;    line-height: 0.1  !important;font-weight: 900;
       }
-   
+      .img-style{
+      width: 420px; position: relative; left: -50px;  bottom: 0px; transform: rotate(-4deg);  
+      }
  
     }
 
@@ -267,7 +274,7 @@
     }
     .collapse.navbar-collapse {
     position: fixed;
-    background: #303030;
+    background: #2a11bf;
     width: 80%;
     height: 100%;
     left: 0;
@@ -354,7 +361,10 @@
       <div class="mb-4 rounded-3">
          
         <div class="container-fluid col-sm-7 col-lg-7  text-light text-center  pt-md-2 mt-md-1" >  
-          <h1 class=" display-1 m-0 fw-900 ls text-center "> You are the real change.</h1>
+          <h1 class=" display-1 m-0 fw-900 ls text-center "> You are the real 
+
+            <img class="img-style" src="dist/images/change.png" alt="">
+          </h1>
           <button onclick="init()" class="btn btn-danger btn-lg rounded-pill justify-content-center d-flex d-sm-none align-items-center getInit" type="button">
           <i class="fa-solid fa-arrow-down fs-6"></i>
           </button>
@@ -492,7 +502,7 @@
               <h1 class="display-2 mb-sm-5" style="
               font-weight: 900;
               color: white;
-              "> My Lib.</h1>
+              ">Cases.</h1>
               <p> Trabalhos que tive o prazer de criar, desenvolver e aprender com as praticas.  </p>
               <p>  Meu momento é de desenvolver soluções simples e de maneira autonoma, para ajudar trabalhadores informais. </p>  
               <p> Tenho me dedicado a programação, mas  o design ainda é uma das minhas paixões.</p>  
@@ -521,18 +531,22 @@
 
     <script>
       initSlide=()=>{
+
         let containerSlide=document.getElementById("slide")
 
-        containerSlide==true ? 
-        
-        innerHTML=`
+       
+        if (window.matchMedia("(min-width: 768px)").matches) {
+         
+          containerSlide.innerHTML=`
               <div class="swiper mySwiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"> 
-                <img src="dist/images/logo-marca.png" alt=""> 
+                <div class="swiper-slide">  
+                  <img src="dist/images/logo-marca.png" alt=""> 
+
                 </div>
-                <div class="swiper-slide"> 
-                <img src="dist/images/mobile.png" alt=""> 
+                <div class="swiper-slide">  
+                <img src="dist/images/logo-marca.png" alt=""> 
+
                 </div>
 
                 </div>
@@ -540,14 +554,35 @@
                 <!-- <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div> -->
               </div>
-        `
-        :
+           `
+      
+
+        } else {
+          containerSlide.innerHTML=`
+              <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                  <img src="dist/images/new-mob.png" alt=""> 
+
+                </div>
+                <div class="swiper-slide"> 
+                  <img src="dist/images/new-mob.png" alt=""> 
+                  
+                </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+              </div>
+           `
+      
+
+        }
         
-        console.log('err')
-
-          
-
-      }
+      } 
+      
+      initSlide()
     </script>  
 
     <section  class="Sobre"style="background: #2a11bf;">
@@ -555,7 +590,7 @@
         <div class="container-fluid">
           <div class="row p-3 p-md-0 p-lg-5">
             <div class="col-md-4 mt-5 p-lg-5">
-              <h1 class="display-2 mb-sm-5" style="font-weight: 900;color: white;"> About.</h1>
+              <h1 class="display-2 mb-sm-5" style="font-weight: 900;color: white;"> Sobre.</h1>
                <p class=" d-none d-lg-block"> 
                 Crio interfaces e UI’s focadas na experiência do usuário e integrações de recursos de usabilidade de lojas para comércio eletrônico.
               </p>   
@@ -618,7 +653,7 @@
       <div class="container-fluid">
         <div class="row pt-5 pb-5 align-content-center"> 
           <div class="col-sm-4 col-md-6 col-offset-2 text-white"> 
-            <p class="pl-2 pb-0 lead">Fale comigo e tires suas dúvidas, se precisar </br>pode me contratar também !</p>
+            <p class="lead p-3">Fale comigo e tires suas dúvidas, se precisar pode me contratar também !</p>
           </div>
           <div class="col-md-4 text-white" style="
           display: flex;
