@@ -113,6 +113,8 @@
     }
     header {
     margin:  0px auto;
+    min-height: 410px !important;
+
     }
     header .btn-danger {
     width: 40px;
@@ -265,8 +267,13 @@
     }
     }
     @media(min-width:1024px){
+      .ls{
+        letter-spacing: -10px;
+        }
       .display-1 {
-        font-size: 6.7rem !important;    line-height: 0.1  !important;font-weight: 900;
+        font-size: 7.6rem !important;
+        line-height: 0.1 !important;
+        font-weight: 900;
       }
       .img-style{
       width: 420px; position: relative; left: -50px;  bottom: 0px; transform: rotate(-4deg);  
@@ -339,7 +346,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-transpart"  aria-label="First navbar example">
       <div class="container-fluid orders">
         <a class="navbar-brand d-flex align-items-center" href="#"> 
-          <img src="logo.png" style="width: 110px;" alt="">
+          <img src="logo.png" style="width: 23px;" alt="">
        </a>
         <button class="navbar-toggler border-0 p-0" onclick="Menu()" id="btn-menu" mtype="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <img src="dist/images/menu.png"  width="20" alt="">
@@ -352,14 +359,18 @@
             <li class="nav-item">
               <a class="nav-link"  href="#about">Sobre</a>
             </li> 
+            <li class="nav-item">
+              <a class="nav-link"  href="#about">Currículo</a>
+            </li> 
           </ul>
         </div>
         <div class="d-none d-md-flex align-items-center"> 
           <a href="https://wa.me/123833 " class="btn border-1 rounded-pill  " style="
           border: 2px solid white;
           width: 140px;
+          min-width: 70px !important;
       " type="button">
-            Fale comigo  <i class="fa-brands fa-whatsapp"></i>
+           Conect-se  <i class="fa-brands fa-whatsapp"></i>
         </a>
           <a target="_blank" href="https://github.com/vadevlife"> 
           <i class="fa-brands fa-github fs-6 text-white  p-3 d-none d-lg-block"></i>
@@ -431,7 +442,7 @@
           </div>
       </div>
 
-      <div class="highlights pt-md-3" style="background: #2A11BF;">
+      <div class="highlights pt-md-3" style="background: #2A11BF;     background-image: url(dist/images/lines.png);">
        
         <div class="container-fluid mb-sm-4 ">
           <div class="row">
@@ -515,7 +526,8 @@
               ">Cases.</h1>
               <p class="lead"> Projetos maravilhosos que tive o prazer de fazer parte e me inspirar com as equipes  </p>
    
-                <ul class="mt-sm-2"> 
+                <ul class="mt-5"> 
+                  <li>HTML, CSS e JS</li>
                   <li>Wordpress</li>
                   <li>Magento E-commerce</li>
                   <li>Open Cart E-commerce</li>
@@ -524,7 +536,8 @@
                 </ul>
              <a href="https://wa.me/12982969703" class="btn border-1 rounded-pill mt-4 " style="
              border: 2px solid white;
-             width: 140px;
+             width: 170px;
+             min-width: 70px !important;
          " type="button" target="_blank">
                Fale comigo
                <i class="fa-brands fa-whatsapp"></i>
@@ -623,7 +636,7 @@
                   <ul>
                     <h6>Habilidades </h6>
                     <li>Html5</li>
-                    <li>Css3</li>
+                    <li>Css3, Sass</li>
                     <li>Bootstrap, Foundation</li>
                     <li>JavaScript</li>
                     <li>React</li>
@@ -665,16 +678,20 @@
       
      <div style="background: #12007e;">
       <div class="container-fluid">
-        <div class="row pt-5 pb-5 align-content-center"> 
+        <div class="row p-5 align-content-center"> 
+          <h1 class="display-3 mb-sm-2" style="font-weight: 900;color: white;"> Download.</h1>
+
           <div class="col-sm-4 col-md-6 col-offset-2 text-white"> 
-            <p class="lead p-3">Fale comigo e tire dúvidas, se precisar pode me contratar também !</p>
+            <p class="lead ">Fale comigo e tire dúvidas, se precisar pode me contratar também !</p>
           </div>
           <div class="col-md-4 text-white" style="
           display: flex;
           justify-content: flex-end;
           align-items: center;
       ">
-            <a href="curriculum-vinicius-araujo.pdf" target="_blank" class="btn btn-primary rounded-pill mt-4 m-auto m-md-0 fs-6 p-5 pt-2 pb-2">   Curriculum Download <i class="fa-regular fa-file-pdf"></i></a> 
+           <button  class="btn border-1 btn-lg rounded-pill  " style="border: 2px solid white;   " type="button">
+            Curriculum Download <i class="fa-regular fa-file-pdf"></i>
+         </button> 
           </div>
         </div>
       </div>
@@ -693,7 +710,7 @@
   <script>
     var swiper = new Swiper(".mySwiper", {
       autoplay: {
-        delay: 2000,
+        delay: 5000,
       },
       spaceBetween: 0,
       breakpoints: {
