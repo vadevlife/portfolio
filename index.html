@@ -38,6 +38,32 @@
     .highlights h6{
       padding: 10px 0 0;
     }
+   
+    .highlights h6:before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background: red;
+        margin: 22px auto;
+        transition: .3s;
+
+    }
+    .card[view='true']  h6:before {
+      width: 30%;
+      transition: .3s;
+      
+    }
+   
+    .card[view='false'] p:last-child{
+      height:0;
+      overflow: hidden;
+
+    }
+    .card[view='true'] p:last-child{
+      height:80px; 
+
+    }
     .lead{
       font-size: 20px !important;
     }
@@ -372,11 +398,15 @@
           width: 140px;
           min-width: 70px !important;
       " type="button">
-           Conecte-se                 <i class="fa-brands fa-linkedin"></i>
+           Fale comigo                <i class="fa-brands fa-whatsapp"></i>
 
         </a>
-          <a target="_blank" href="https://github.com/vadevlife"> 
-          <i class="fa-brands fa-github fs-6 text-white  p-3 d-none d-lg-block"></i>
+        <a target="_blank" href="https://github.com/vadevlife"> 
+          <i class="fa-brands fa-linkedin fs-6 text-white d-none d-lg-block"></i>
+        
+        </a>
+        <a target="_blank" href="https://github.com/vadevlife"> 
+          <i class="fa-brands fa-github fs-6 text-white   d-none d-lg-block"></i>
         </a>
         
         
@@ -463,12 +493,12 @@
           </div>
           <div class="row justify-content-between p-md-3">
             <div class="col-sm-3 col-md-4 col-lg-3 d-none d-lg-block">
-              <div onclick="animatedView(this)" class="card bg-transparent p-3 border-0">
+              <div view='false'  onclick="animatedView(this)" class="card bg-transparent p-3 border-0">
                 <div class="card-body text-white ">
                   <i class="far fa-edit fs-6"></i>
                   <h6>Design Gráfico</h6>
-                  <p>Direção de Arte criativo de peças publicitárias, mídias sociais, material de PDV e impressão digital.</p>
-                  <p style="display:none">Design criativo de peças publicitárias, campanhas digitais, mídias sociais, material de PDV e impressão digital.</p>
+                  <p>Direção de Arte de peças publicitárias, mídias sociais, material de PDV e impressão digital.</p>
+                  <p>Aumente o engajamento de campanhas com Design criativo.</p>
                    
                 </div>
                 <a href="" class="d-flex justify-content-end text-danger"><i class="fas fa-long-arrow-alt-right fs-6"></i> </a>
@@ -476,38 +506,44 @@
               </div>
             </div>
             <div class=" col-sm-4 col-md-4 col-lg-3">
-              <div onclick="animatedView(this)" class="card bg-transparent p-3 border-0 pb-2"  >
+              <div view='false' onclick="animatedView(this)" class="card bg-transparent p-3 border-0 pb-2"  >
                 <div class="card-body text-white"> 
                   <i class="fas fa-mobile-alt fs-6"></i>
 
                   <h6>Design de interface</h6>
                   <p>Soluções de UI Design para web sites, mobile apps, lojas online processos pensados na usabilidade do seu produto.
                   </p> 
-                  <a href="" class="d-flex justify-content-end text-danger"><i class="fas fa-long-arrow-alt-right fs-6"></i> </a>
+                  <p>Otimize a experiência de suas aplicações com UI Design  profissional. </p> 
 
                 </div>
+                <a href="" class="d-flex justify-content-end text-danger"><i class="fas fa-long-arrow-alt-right fs-6"></i> </a>
+
               </div>
             </div>
             <div class="col-sm-4 col-md-4 col-lg-3"> 
-              <div class="card bg-transparent p-3 border-0  pb-2">
+              <div view='false' onclick="animatedView(this)" class="card bg-transparent p-3 border-0  pb-2">
                 <div class="card-body text-white">  
                   <i class="fa-solid fa-tv"></i> 
                   <h6>Desenvolvimento de Sites</h6>
                   <p  >Aplicações responsivas ou apps nativos, integrações com Rest API's podem deixar seu site mais dinâmico.
                   </p>
-                  <a href="" class="d-flex justify-content-end text-danger"><i class="fas fa-long-arrow-alt-right fs-6"></i> </a>
+                  <p  >Sites exclusivos pensados na sua regra de negócio.</p>
                 </div>
+                <a href="" class="d-flex justify-content-end text-danger"><i class="fas fa-long-arrow-alt-right fs-6"></i> </a>
+
               </div>
             </div> 
             <div class="col-sm-4 col-md-4 col-lg-3">
-              <div class="card bg-transparent p-3 border-0 pb-2"  >
+              <div view='false' onclick="animatedView(this)" class="card bg-transparent p-3 border-0 pb-2"  >
                 <div class="card-body text-white">
                   <i class="fas fa-cart-arrow-down fs-6"></i>
                   <h6>E-commerce integrações </h6>
-                  <p>Integração a plataformas de e-commerce. desenvolva recursos exclusivos para sua loja, site ou landing page. 
-                  <a href="" class="d-flex justify-content-end text-danger"><i class="fas fa-long-arrow-alt-right fs-6"></i> </a>
+                  <p>Integração a plataformas de e-commerce. desenvolva recursos exclusivos para sua loja, site ou landing page. </p>
+                  <p>Desenvolvo lojas de auto desempenho com recursos especifícos para seu empreendimento.  </p>
 
                 </div>
+                <a href="" class="d-flex justify-content-end text-danger"><i class="fas fa-long-arrow-alt-right fs-6"></i> </a>
+
             </div>
             
           </div>
@@ -543,9 +579,9 @@
              width: 170px;
              min-width: 70px !important;
          " type="button" target="_blank">
-               Conecte-se 
-               <!-- <i class="fa-brands fa-whatsapp"></i> -->
-               <i class="fa-brands fa-linkedin"></i>
+             Fale comigo 
+               <i class="fa-brands fa-whatsapp"></i>
+               <!-- <i class="fa-brands fa-linkedin"></i> -->
            </a>
             </div>
 
@@ -565,9 +601,13 @@
     <script>
 
       animatedView=(obj)=>{
-        console.log(obj.childNodes[1].childNodes[8])
-        obj.childNodes[1].childNodes[8].style.cssText="display:block"
+        console.log(obj)
+        // obj.setAttribute('view','true')
+
+        obj.getAttribute('view')=='true' ? obj.setAttribute('view','false') : obj.setAttribute('view','true')
       }
+
+
       initSlide=()=>{
 
         let containerSlide=document.getElementById("slide")
