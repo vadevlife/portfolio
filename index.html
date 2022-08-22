@@ -367,12 +367,12 @@
           </ul>
         </div>
         <div class="d-none d-md-flex align-items-center"> 
-          <a href="" class="btn border-1 rounded-pill  " style="
+          <a target="_blank" href="https://www.linkedin.com/in/vinicius-araujo-1418649b/" class="btn border-1 rounded-pill  " style="
           border: 2px solid white;
           width: 140px;
           min-width: 70px !important;
       " type="button">
-           Conect-se                 <i class="fa-brands fa-linkedin"></i>
+           Conecte-se                 <i class="fa-brands fa-linkedin"></i>
 
         </a>
           <a target="_blank" href="https://github.com/vadevlife"> 
@@ -463,11 +463,12 @@
           </div>
           <div class="row justify-content-between p-md-3">
             <div class="col-sm-3 col-md-4 col-lg-3 d-none d-lg-block">
-              <div class="card bg-transparent p-3 border-0">
+              <div onclick="animatedView(this)" class="card bg-transparent p-3 border-0">
                 <div class="card-body text-white ">
                   <i class="far fa-edit fs-6"></i>
                   <h6>Design Gráfico</h6>
-                  <p>Design criativo de peças publicitárias, campanhas digitais, mídias sociais, material de PDV e impressão digital.</p>
+                  <p>Direção de Arte criativo de peças publicitárias, mídias sociais, material de PDV e impressão digital.</p>
+                  <p style="display:none">Design criativo de peças publicitárias, campanhas digitais, mídias sociais, material de PDV e impressão digital.</p>
                    
                 </div>
                 <a href="" class="d-flex justify-content-end text-danger"><i class="fas fa-long-arrow-alt-right fs-6"></i> </a>
@@ -475,24 +476,24 @@
               </div>
             </div>
             <div class=" col-sm-4 col-md-4 col-lg-3">
-              <div class="card bg-transparent p-3 border-0 pb-2"  >
+              <div onclick="animatedView(this)" class="card bg-transparent p-3 border-0 pb-2"  >
                 <div class="card-body text-white"> 
                   <i class="fas fa-mobile-alt fs-6"></i>
 
                   <h6>Design de interface</h6>
-                  <p>Soluções de UI Design para web sites, mobile apps, lojas online. Processos pensados na usabilidade do seu produto.
+                  <p>Soluções de UI Design para web sites, mobile apps, lojas online processos pensados na usabilidade do seu produto.
                   </p> 
                   <a href="" class="d-flex justify-content-end text-danger"><i class="fas fa-long-arrow-alt-right fs-6"></i> </a>
 
                 </div>
               </div>
             </div>
-            <div class="col-sm-4 col-md-4 col-lg-3 d-none d-md-block"> 
+            <div class="col-sm-4 col-md-4 col-lg-3"> 
               <div class="card bg-transparent p-3 border-0  pb-2">
                 <div class="card-body text-white">  
                   <i class="fa-solid fa-tv"></i> 
                   <h6>Desenvolvimento de Sites</h6>
-                  <p  >Desenvolvemos web sites, aplicações responsivas ou apps nativos, integrações com Rest API podem deixar seu site mais dinâmico.
+                  <p  >Aplicações responsivas ou apps nativos, integrações com Rest API's podem deixar seu site mais dinâmico.
                   </p>
                   <a href="" class="d-flex justify-content-end text-danger"><i class="fas fa-long-arrow-alt-right fs-6"></i> </a>
                 </div>
@@ -503,8 +504,7 @@
                 <div class="card-body text-white">
                   <i class="fas fa-cart-arrow-down fs-6"></i>
                   <h6>E-commerce integrações </h6>
-                  <p>Integração a plataforma de e-commerce. desenvolva recursos exclusivos para sua loja ou site, SEO e landing pages de captação
-                  </p> 
+                  <p>Integração a plataformas de e-commerce. desenvolva recursos exclusivos para sua loja, site ou landing page. 
                   <a href="" class="d-flex justify-content-end text-danger"><i class="fas fa-long-arrow-alt-right fs-6"></i> </a>
 
                 </div>
@@ -513,8 +513,9 @@
           </div>
         </div>
 
-        
-    </div>
+            
+        </div>
+      </div>
 
   
     <section class="portfolio">
@@ -527,7 +528,7 @@
               font-weight: 900;
               color: white;
               ">Cases.</h1>
-              <p class="lead"> Projetos maravilhosos que tive o prazer de fazer parte e me inspirar com as equipes  </p>
+              <p class="lead"> Projetos maravilhosos que tive o prazer de participar e me inspirar com as equipes.  </p>
    
                 <ul class="mt-5"> 
                   <li>HTML, CSS e JS</li>
@@ -537,12 +538,12 @@
                   <li>React</li>
                   <li>React Native</li>
                 </ul>
-             <a href="" class="btn border-1 rounded-pill mt-4 " style="
+             <a target="_blank" href="https://www.linkedin.com/in/vinicius-araujo-1418649b/" class="btn border-1 rounded-pill mt-4 " style="
              border: 2px solid white;
              width: 170px;
              min-width: 70px !important;
          " type="button" target="_blank">
-               Conect-se 
+               Conecte-se 
                <!-- <i class="fa-brands fa-whatsapp"></i> -->
                <i class="fa-brands fa-linkedin"></i>
            </a>
@@ -562,6 +563,11 @@
 
 
     <script>
+
+      animatedView=(obj)=>{
+        console.log(obj.childNodes[1].childNodes[8])
+        obj.childNodes[1].childNodes[8].style.cssText="display:block"
+      }
       initSlide=()=>{
 
         let containerSlide=document.getElementById("slide")
@@ -625,9 +631,8 @@
                <p class=" d-none d-lg-block"> 
                 Posso criar e desenvolver interfaces e aplicações focadas na  experiência do usuário, integrar recursos de usabilidade para sites, produtos digitais, e-commerce ou alguma soluções específica.            </p>   
               <p class="p-sm-0 bio">
-                Me chamo Vinicius Araujo, sou Designer  e Desenvolvedor Front-End. Trabalhei por 4 anos criando e desenvolvendo lojas para e-commerce e integrando recursos front-end.</br></br>
-                Em paralelo como freelancer atuando na criação de UIs e no desenvolvimento das aplicações na camada front-end
-                 ,Web Sites, Lojas Online, Landing Pages, Sites Institucionais, campanhas de marketing digital para agências digitais do Brasil e do exterior. 
+                Me chamo Vinicius Araujo, sou Designer  e Desenvolvedor Front-End. Trabalhei por 4 anos, criando e desenvolvendo lojas para e-commerce e integrando recursos front-end para novas aplicações.</br></br>
+                Em paralelo atuo como freelancer na criação de UIs e no desenvolvimento de   aplicações na camada front-end, Web Sites, Lojas Online, Landing Pages, Sites Institucionais e campanhas de marketing digital para agências do Brasil e do exterior. 
               </p> 
               <a target="_blank" href="curriculum-vinicius-araujo.pdf" class="btn border-1 btn-lg rounded-pill  " style="border: 2px solid white;   margin: 15px auto;" type="button">
                 Curriculo Download <i class="fa-regular fa-file-pdf"></i>
