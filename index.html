@@ -27,6 +27,9 @@
     a{
       font-size: 14px !important;
     }
+    .display-1 {
+        font-size: 4.3rem;
+    }
     .highlights p,p,li{
       font-size: 13px; 
       opacity: 0.8;
@@ -77,6 +80,7 @@
     .portfolio{
       background-color: #DE1745;
     }
+   
     .bg-dark {
     --bs-bg-opacity: 0;
     background-color: #2a11bf !important;
@@ -197,6 +201,9 @@
     border-top: 1px solid;
     padding-top: 10px;
     }
+    .portfolio h3,.portfolio p{
+      text-align: center;
+    }
  
     @media (max-width:400px){
       .bio{
@@ -253,10 +260,10 @@
       width: 220px; position: relative;  bottom: 45px; transform: rotate(-4deg);  
       }
     @media(min-width:768px){
-
-      section {
-   
-    padding: 0px;
+      .display-1 {
+        font-size: 2.3rem;
+    }
+      section { padding: 0px;
 }
     #bg-fish {
       background: url(dist/images/background.png) no-repeat; 
@@ -298,7 +305,16 @@
       .ls{
         letter-spacing: -10px;
         }
-      .display-1 {
+        .display-1 {
+        font-size: 4.6rem !important;
+         
+
+        }
+        #portfolio .display-1,#portfolio p { 
+         text-align: left;
+
+        }
+        header#bg-fish .display-1 {
         font-size: 7.6rem !important;
         line-height: 0.1 !important;
         font-weight: 900;
@@ -480,11 +496,11 @@
         <div class="container-fluid mb-sm-4 ">
           <div class="row">
             <div class="col-lg-12 mt-sm-2 p-5 text-center">
-              <h1 class="display-2 mb-sm-1" style="
+              <h1 class="display-1 mb-sm-1" style="
               font-weight: 900;
               color: white;
               text-align:center;
-              ">Soluções.</h1>
+              ">Soluções</h1>
               <p class="p-0 m-0 lead" >Veja principais soluções para seu negócio ou produto digital; </p>
                
               
@@ -560,13 +576,14 @@
         <div class="container-fluid">
           <div class="row p-0 p-lg-0 p-md-0 p-lg-0">
             <div class="col-md-6 col-lg-4 mt-5 p-lg-5">
-              <h1 class="display-2 mb-sm-2" style="
+              <h3 class="display-1 mb-sm-2" style="
               font-weight: 900;
               color: white;
-              ">Cases.</h1>
+              
+              ">Cases.</h3>
               <p class="lead"> Projetos maravilhosos que tive o prazer de participar e me inspirar com as equipes.  </p>
    
-                <ul class="mt-5"> 
+                <ul class="mt-5 d-none d-sm-block"> 
                   <li>HTML, CSS e JS</li>
                   <li>Wordpress</li>
                   <li>Magento E-commerce</li>
@@ -574,7 +591,7 @@
                   <li>React</li>
                   <li>React Native</li>
                 </ul>
-             <a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B5512981784387&text=" class="btn border-1 rounded-pill mt-4 " style="
+             <a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B5512981784387&text=" class="d-none  d-sm-block btn border-1 rounded-pill mt-4 " style="
              border: 2px solid white;
              width: 170px;
              min-width: 70px !important;
@@ -667,7 +684,7 @@
         <div class="container-fluid">
           <div class="row p-3 p-md-0 p-lg-5">
             <div class="col-md-4 mt-5 ">
-              <h1 class="display-2 mb-sm-5" style="font-weight: 900;color: white;"> Sobre.</h1>
+              <h1 class="display-1 mb-sm-5" style="font-weight: 900;color: white;"> Sobre.</h1>
                <p class=" d-none d-lg-block"> 
                 Posso criar e desenvolver interfaces e aplicações focadas na  experiência do usuário, integrar recursos de usabilidade para sites, produtos digitais, e-commerce ou alguma soluções específica.            </p>   
               <p class="p-sm-0 bio">
@@ -711,6 +728,12 @@
                 <div class="col-md-6 text-white  "> 
                   <ul>
                     <h6>Cursando </h6>  
+                    <li>MBA - Design Thinking - FIAP</li>
+                  </ul>
+                </div>
+                <div class="col-md-6 text-white  "> 
+                  <ul>
+                    <h6>hAB </h6>  
                     <li>MBA - Design Thinking - FIAP</li>
                   </ul>
                 </div>
